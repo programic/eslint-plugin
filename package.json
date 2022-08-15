@@ -1,0 +1,37 @@
+{
+  "name": "@programic/eslint-plugin",
+  "version": "1.0.0",
+  "description": "Official ESLint plugin for Programic",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint ./lib --ext .js",
+    "test": "jest ./tests",
+    "prepublishOnly": "npm run lint && npm run test",
+    "preversion": "npm run lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "eslint",
+    "programic",
+    "eslintplugin"
+  ],
+  "author": "Thimon Wentink",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^7.5.0 || ^8.2.0"
+  },
+  "dependencies": {
+    "eslint-plugin-vue": "^9.3.0"
+  },
+  "devDependencies": {
+    "@programic/eslint-config-base": "^8.0.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-jest": "^26.8.3",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "jest": "^27.0.6"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "extends": [
+    "@programic/eslint-config-base"
+  ],
+  "rules": {
+    "unicorn/prevent-abbreviations": ["error", {
+      "checkShorthandProperties": true,
+      "checkProperties": true,
+      "ignore": [
+        "^docs$"
+      ]
+    }]
+  }
+}
