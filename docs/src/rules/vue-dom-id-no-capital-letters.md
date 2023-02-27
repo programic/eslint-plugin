@@ -2,7 +2,7 @@
 
 > Disallows using capital letters in a DOM element `id` attribute inside your Vue `<template>`
 
-- :hammer: This rule is **not** automatically fixable.
+- :hammer: This rule is **not** automatically fixable
 - :exclamation: Use this rule only in your `.vue` files
 
 ## :book: Rule details

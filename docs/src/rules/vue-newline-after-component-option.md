@@ -2,7 +2,7 @@
 
 > Enforce exactly one newline after every Vue component option
 
-- :hammer: This rule is automatically fixable.
+- :hammer: This rule is automatically fixable
 - :information_source: This rule only works when using the Options API
 
 ## :book: Rule details

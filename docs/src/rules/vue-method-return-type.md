@@ -2,7 +2,7 @@
 
 > Enforce a TypeScript return type in methods in Vue
 
-- :hammer: This rule is **not** automatically fixable.
+- :hammer: This rule is **not** automatically fixable
 - :information_source: This rule only works when using the Options API
 
 ## :book: Rule details

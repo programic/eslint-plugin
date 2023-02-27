@@ -2,7 +2,7 @@
 
 > Enforce exactly one newline before the first type-only import
 
-- :hammer: This rule is automatically fixable.
+- :hammer: This rule is automatically fixable
 - :information_source: This rule only works when using TypeScript
 
 ## :book: Rule details
