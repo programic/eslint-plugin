@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/@programic%2Feslint-plugin.svg)](https://badge.fury.io/js/@programic%2Feslint-plugin)
 
-This package contains Programic's custom rules that we were missing in existing plugins.
+This package contains Programic's code styling presets and our own custom rules that we were missing in existing plugins.
 
 ## Usage
 
@@ -17,7 +17,9 @@ This package contains Programic's custom rules that we were missing in existing 
 
 2. Add `"@programic"` (or `"@programic/eslint-plugin"`) to `plugins` in your .eslintrc.
 
-3. Add the rules you want to use to your .eslintrc, like this:
+3. [Optional] Extend one of our presets, like this `"extends": ["plugin:programic/typescript-vue"]`
+
+4. [Optional] You can add the custom rules you need to your .eslintrc, like this:
 
   ```json
   {
@@ -28,4 +30,4 @@ This package contains Programic's custom rules that we were missing in existing 
 }
   ```
 
-4. Add a lint script to your package.json: `eslint . --ext .js,.jsx` so you can run `npm run lint` or `yarn lint`. The `.` can be replaced with the path to your files and the value for the flag `--ext` can be replaced by a comma seperated list of the file extensions you want to lint. Replace the lint script if it already exists.
+5. Add a lint script to your package.json: `eslint . --ext .js,.jsx` so you can run `npm run lint` or `yarn lint`. The `.` can be replaced with the path to your files and the value for the flag `--ext` can be replaced by a comma seperated list of the file extensions you want to lint. Replace the lint script if it already exists.
