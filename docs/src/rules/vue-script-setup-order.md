@@ -19,5 +19,23 @@ The order is seperated into multiple groups. The default group order is:
 8. Methods (`Any function statement`)
 
 ## :gear: Options
-Nothing.
+```json
+{
+  "@programic/vue-script-setup-order": ["error", {
+    "order": [
+      "imports",
+      "defineProps",
+      "defineEmits",
+      "states",
+      "computedProperties",
+      "watchers",
+      "hooks",
+      "methods"
+    ]
+  }]
+}
+```
 
+- `order` (`string[]`) ... The groups order.
+
+  Every group must exist in the given order array. Default is above.
