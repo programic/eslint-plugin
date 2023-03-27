@@ -34,8 +34,15 @@ describe('the Programic ESLint plugin', () => {
       ),
       'vue-dom-id-no-capital-letters': require('../../lib/rules/vue-dom-id-no-capital-letters'),
       'vue-method-return-type': require('../../lib/rules/vue-method-return-type'),
+      'vue-no-compiler-macro-imports': require('../../lib/rules/vue-no-compiler-macro-imports'),
       'vue-no-function-expressions': require('../../lib/rules/vue-no-function-expressions'),
       'vue-no-multiple-template-root': require('../../lib/rules/vue-no-multiple-template-root'),
+      'vue-script-setup-newlines-inside-groups': require(
+        '../../lib/rules/vue-script-setup-newlines-inside-groups',
+      ),
+      'vue-script-setup-newlines-between-groups': require(
+        '../../lib/rules/vue-script-setup-newlines-between-groups',
+      ),
       'vue-script-setup-order': require('../../lib/rules/vue-script-setup-order'),
     });
   });

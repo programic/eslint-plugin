@@ -1,14 +1,16 @@
-# @programic/vue-script-setup-order
+# @programic/vue-script-setup-newlines-between-groups
 
-> Enforce a specific order in Vue components inside the script setup tag
+> Enforce newlines between groups in Vue script setup tags
 
 - :hammer: This rule is **not** automatically fixable
 - :information_source: This rule only works when using the Composition API and script setup tags
+- :information_source: This rule assumes you are using the `@programic/vue-script-setup-order` rule
+- :warning: This rule can give false positives when the script setup code is not in the right order (the specified order of `@programic/vue-script-setup-order`)
 
 ## :book: Rule details
-This rule enforces a specific order in Vue components inside the script setup tag, so that the components remain consistent and developers always know where to look.
+This rule enforces newlines between groups in Vue script setup tag.
 
-The order is seperated into multiple groups. The default group order is:
+Below are the different groups:
 1. Import declarations
 2. Props (`defineProps`)
 3. Emits (`defineEmits`)
@@ -22,22 +24,10 @@ The order is seperated into multiple groups. The default group order is:
 ## :gear: Options
 ```json
 {
-  "@programic/vue-script-setup-order": ["error", {
-    "order": [
-      "imports",
-      "defineProps",
-      "defineEmits",
-      "states",
-      "computedProperties",
-      "watchers",
-      "hooks",
-      "methods",
-      "defineExpose"
-    ]
+  "@programic/vue-script-setup-newlines-between-groups": ["error", {
+    "numberOfNewlines": 1
   }]
 }
 ```
 
-- `order` (`string[]`) ... The groups order.
-
-  Every group must exist in the given order array. Default is above.
+- `numberOfNewlines` (`integer`) ... The number of newlines that are enforced between groups. Default is 1.

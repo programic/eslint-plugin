@@ -1,4 +1,4 @@
-# @programic/pinia-no-function-variable-declarations
+# @programic/pinia-no-function-expressions
 
 > Disallows function expressions inside Pinia store setup definition
 
