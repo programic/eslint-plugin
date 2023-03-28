@@ -44,6 +44,7 @@ describe('the Programic ESLint plugin', () => {
         '../../lib/rules/vue-script-setup-newlines-between-groups',
       ),
       'vue-script-setup-order': require('../../lib/rules/vue-script-setup-order'),
+      'vue-v-on-handler-style': require('../../lib/rules/vue-v-on-handler-style'),
     });
   });
 });
