@@ -3,7 +3,7 @@
 > Enforce a specific order in Pinia store setup definitions
 
 - :hammer: This rule is **not** automatically fixable
-- :information_source: This rule assumes you are using Pinia stores
+- :information_source: This rule assumes you are using Vue and Pinia stores
 
 ## :book: Rule details
 This rule enforces a specific order in in Pinia store setup definitions, so that the stores remain consistent and developers always know where to look.
@@ -14,21 +14,7 @@ The order is seperated into multiple groups. The default group order is:
 3. Watchers (`watch`, `watchEffect`, `watchSyncEffect`, `watchPostEffect`)
 4. Methods (`Any function statement`)
 
+You can change the order via the `settings` options. Please read the [settings docs](https://github.com/programic/eslint-plugin/blob/master/docs/settings.md).
+
 ## :gear: Options
-```json
-{
-  "@programic/pinia-setup-order": ["error", {
-    "order": [
-      "states",
-      "computedProperties",
-      "watchers",
-      "methods"
-    ]
-  }]
-}
-```
-
-- `order` (`string[]`) ... The groups order.
-
-  Every group must exist in the given order array. Default is above.
-
+Nothing.

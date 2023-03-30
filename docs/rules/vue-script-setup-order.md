@@ -19,25 +19,7 @@ The order is seperated into multiple groups. The default group order is:
 8. Methods (`Any function statement`)
 9. Expose (`defineExpose`)
 
+You can change the order via the `settings` options. Please read the [settings docs](https://github.com/programic/eslint-plugin/blob/master/docs/settings.md).
+
 ## :gear: Options
-```json
-{
-  "@programic/vue-script-setup-order": ["error", {
-    "order": [
-      "imports",
-      "defineProps",
-      "defineEmits",
-      "states",
-      "computedProperties",
-      "watchers",
-      "hooks",
-      "methods",
-      "defineExpose"
-    ]
-  }]
-}
-```
-
-- `order` (`string[]`) ... The groups order.
-
-  Every group must exist in the given order array. Default is above.
+Nothing.

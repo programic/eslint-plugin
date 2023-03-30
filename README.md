@@ -27,10 +27,13 @@ This package contains Programic's code styling presets and our own custom rules 
       "@programic/newline-before-first-type-import": "error",
       "@programic/dom-class-no-capital-letters": "error"
     }
-}
+  }
   ```
 
 5. Add a lint script to your package.json: `eslint . --ext .js,.jsx` so you can run `npm run lint` or `yarn lint`. The `.` can be replaced with the path to your files and the value for the flag `--ext` can be replaced by a comma seperated list of the file extensions you want to lint. Replace the lint script if it already exists.
+
+## Configuration
+Some rules use a shared configuration. Please read the [settings docs](https://github.com/programic/eslint-plugin/blob/master/docs/settings.md) if you want to change the default configuration.
 
 ## Setup requirements
 Before using any config or rule from this package, you should include the necessary packages.

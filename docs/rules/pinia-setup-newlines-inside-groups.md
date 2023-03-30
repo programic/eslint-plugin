@@ -1,28 +1,27 @@
-# @programic/vue-script-setup-newlines-inside-groups
+# @programic/pinia-setup-newlines-inside-groups
 
-> Enforce newlines inside groups in Vue script setup tags
+> Enforce newlines inside groups in Pinia store setup definitions
 
 - :hammer: This rule is **not** automatically fixable
-- :information_source: This rule only works when using the Composition API and script setup tags
-- :information_source: This rule assumes you are using the `@programic/vue-script-setup-order` rule
-- :warning: This rule can give false positives when the script setup code is not in the right order (enforced by `@programic/vue-script-setup-order`)
+- :information_source: This rule only works when using the Composition API and Pinia stores
+- :information_source: This rule assumes you are using the `@programic/pinia-setup-order` rule
+- :warning: This rule can give false positives when the setup definition code is not in the right order (enforced by `@programic/pinia-setup-order`)
 
 ## :book: Rule details
-This rule enforces newlines inside groups in Vue script setup tag.
+This rule enforces newlines inside groups in Pinia store setup definitions.
 
 Below are the different groups (default):
 1. States (`Any variable that is not part of another group`)
 2. Computed properties (`computed`)
 3. Watchers (`watch`, `watchEffect`, `watchSyncEffect`, `watchPostEffect`)
-4. Lifecycle hooks (`onMounted`, `onUpdated`, `onUnmounted`, `onBeforeMount`, `onBeforeUpdate`, `onBeforeUnmount`, `onErrorCaptured`, `onRenderTracked`, `onRenderTriggered`, `onActivated`, `onDeactivated`, `onServerPrefetch`)
-5. Methods (`Any function statement`)
+4. Methods (`Any function statement`)
 
 The order of the groups is determined by the settings object. Please read the [settings docs](https://github.com/programic/eslint-plugin/blob/master/docs/settings.md).
 
 ## :gear: Options
 ```json
 {
-  "@programic/vue-script-setup-newlines-inside-groups": ["error", {
+  "@programic/pinia-setup-newlines-inside-groups": ["error", {
     "numberOfNewlinesBetweenSingleLineItems": 0,
     "numberOfNewlinesBetweenSingleAndMultiLineItems": 0,
     "numberOfNewlinesBetweenMultiLineItems": 0
