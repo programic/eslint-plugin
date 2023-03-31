@@ -4,6 +4,8 @@ describe('the Programic ESLint plugin', () => {
   it('exports the right configs', () => {
     expect(plugin.configs).toStrictEqual({
       base: require('../../lib/configs/base'),
+      nuxt: require('../../lib/configs/nuxt'),
+      'nuxt-typescript': require('../../lib/configs/nuxt-typescript'),
       typescript: require('../../lib/configs/typescript'),
       'vue-typescript': require('../../lib/configs/vue-typescript'),
       vue: require('../../lib/configs/vue'),

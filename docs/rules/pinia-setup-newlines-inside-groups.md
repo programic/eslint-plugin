@@ -19,16 +19,40 @@ Below are the different groups (default):
 The order of the groups is determined by the settings object. Please read the [settings docs](https://github.com/programic/eslint-plugin/blob/master/docs/settings.md).
 
 ## :gear: Options
+You can set the `newlines` option to set the number of expected newlines for all groups. If you want to make an exception for a group, you can set the `{groupType}` option. See example below.
+
 ```json
 {
   "@programic/pinia-setup-newlines-inside-groups": ["error", {
-    "numberOfNewlinesBetweenSingleLineItems": 0,
-    "numberOfNewlinesBetweenSingleAndMultiLineItems": 0,
-    "numberOfNewlinesBetweenMultiLineItems": 0
+    "newlines": {
+      "numberOfNewlinesBetweenSingleLineItems": 0,
+      "numberOfNewlinesBetweenSingleAndMultiLineItems": 0,
+      "numberOfNewlinesBetweenMultiLineItems": 0
+    },
+    "states": {
+      "numberOfNewlinesBetweenSingleLineItems": 0,
+      "numberOfNewlinesBetweenSingleAndMultiLineItems": 0,
+      "numberOfNewlinesBetweenMultiLineItems": 0
+    },
+    "computedProperties": {
+      "numberOfNewlinesBetweenSingleLineItems": 0,
+      "numberOfNewlinesBetweenSingleAndMultiLineItems": 0,
+      "numberOfNewlinesBetweenMultiLineItems": 0
+    },
+    "watchers": {
+      "numberOfNewlinesBetweenSingleLineItems": 0,
+      "numberOfNewlinesBetweenSingleAndMultiLineItems": 0,
+      "numberOfNewlinesBetweenMultiLineItems": 0
+    },
+    "methods": {
+      "numberOfNewlinesBetweenSingleLineItems": 1,
+      "numberOfNewlinesBetweenSingleAndMultiLineItems": 1,
+      "numberOfNewlinesBetweenMultiLineItems": 1
+    }
   }]
 }
 ```
 
-- `numberOfNewlinesBetweenSingleLineItems` (`integer`) ... The number of newlines that are enforced between single line items. Default is 0.
-- `numberOfNewlinesBetweenSingleAndMultiLineItems` (`integer`) ... The number of newlines that are enforced between single line and multi line items. Default is 0.
-- `numberOfNewlinesBetweenMultiLineItems` (`integer`) ... The number of newlines that are enforced between multi line items. Default is 0.
+- `numberOfNewlinesBetweenSingleLineItems` (`integer`) ... The number of newlines that are enforced between single line items. For every group except `methods`, the default is `0`. For `methods` the default is `1`.
+- `numberOfNewlinesBetweenSingleAndMultiLineItems` (`integer`) ... The number of newlines that are enforced between single line and multi line items. For every group except `methods`, the default is `0`. For `methods` the default is `1`.
+- `numberOfNewlinesBetweenMultiLineItems` (`integer`) ... The number of newlines that are enforced between multi line items. For every group except `methods`, the default is `0`. For `methods` the default is `1`.
