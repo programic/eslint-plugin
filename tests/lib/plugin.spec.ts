@@ -6,6 +6,7 @@ describe('the Programic ESLint plugin', () => {
       base: require('../../lib/configs/base'),
       nuxt: require('../../lib/configs/nuxt'),
       'nuxt-typescript': require('../../lib/configs/nuxt-typescript'),
+      tailwindcss: require('../../lib/configs/tailwindcss'),
       typescript: require('../../lib/configs/typescript'),
       'vue-typescript': require('../../lib/configs/vue-typescript'),
       vue: require('../../lib/configs/vue'),

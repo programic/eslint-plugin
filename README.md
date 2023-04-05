@@ -39,20 +39,21 @@ Some rules use a shared configuration. Please read the [settings docs](https://g
 Before using any config or rule from this package, you should include the necessary packages.
 
 ### Configs
-
-|                                   | base    | typescript | vue     | vue-typescript |
-|-----------------------------------|---------|------------|---------|----------------|
-| eslint                            | ^8.2.0  | ^8.2.0     | ^8.2.0  | ^8.2.0         |
-| eslint-plugin-import              | ^2.27.5 | ^2.27.5    | ^2.27.5 | ^2.27.5        |
-| eslint-plugin-import-newlines     | ^1.3.1  | ^1.3.1     | ^1.3.1  | ^1.3.1         |
-| eslint-plugin-unicorn             | ^45.0.2 | ^45.0.2    | ^45.0.2 | ^45.0.2        |
-| eslint-config-airbnb-base         | ^15.0.0 | ^15.0.0    | ^15.0.0 | ^15.0.0        |
-| typescript                        | -       | ^4.9.5     | -       | ^4.9.5         |
-| @typescript-eslint/eslint-plugin  | -       | ^5.53.0    | -       | ^5.53.0        |
-| @typescript-eslint/parser         | -       | ^5.53.0    | -       | ^5.53.0        |
-| eslint-import-resolver-typescript | -       | ^3.5.3     | -       | ^3.5.3         |
-| vue                               | -       | -          | ^3.2.45 | ^3.2.45        |
-| eslint-plugin-vue                 | -       | -          | ^9.9.0  | ^9.9.0         |
-| vue-eslint-parser                 | -       | -          | ^9.1.0  | ^9.1.0         |
+|                                   | tailwindcss | base    | typescript | vue     | vue-typescript |
+|-----------------------------------|-------------|---------|------------|---------|----------------|
+| eslint                            | ^8.2.0      | ^8.2.0  | ^8.2.0     | ^8.2.0  | ^8.2.0         |
+| eslint-plugin-import              | -           | ^2.27.5 | ^2.27.5    | ^2.27.5 | ^2.27.5        |
+| eslint-plugin-import-newlines     | -           | ^1.3.1  | ^1.3.1     | ^1.3.1  | ^1.3.1         |
+| eslint-plugin-unicorn             | -           | ^45.0.2 | ^45.0.2    | ^45.0.2 | ^45.0.2        |
+| eslint-config-airbnb-base         | -           | ^15.0.0 | ^15.0.0    | ^15.0.0 | ^15.0.0        |
+| tailwindcss                       | ^3.2.7      | -       | -          | -       | -              |
+| eslint-plugin-tailwindcss         | ^3.10.3     | -       | -          | -       | -              |
+| typescript                        | -           | -       | ^4.9.5     | -       | ^4.9.5         |
+| @typescript-eslint/eslint-plugin  | -           | -       | ^5.53.0    | -       | ^5.53.0        |
+| @typescript-eslint/parser         | -           | -       | ^5.53.0    | -       | ^5.53.0        |
+| eslint-import-resolver-typescript | -           | -       | ^3.5.3     | -       | ^3.5.3         |
+| vue                               | -           | -       | -          | ^3.2.45 | ^3.2.45        |
+| eslint-plugin-vue                 | -           | -       | -          | ^9.9.0  | ^9.9.0         |
+| vue-eslint-parser                 | -           | -       | -          | ^9.1.0  | ^9.1.0         |
 
 You can find out for yourself which packages mentioned above are required per custom rule. For example, any TypeScript related rules requires the TypeScript ESLint packages (mentioned above) and any Vue related rule requires the Vue ESlint packages (mentioned above).
