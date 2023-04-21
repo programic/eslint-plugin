@@ -23,6 +23,8 @@ Below are the different groups (default):
 
 The order of the groups is determined by the settings object. Please read the [settings docs](https://github.com/programic/eslint-plugin/blob/master/docs/settings.md).
 
+Note: only direct children of the script setup root will be included by this rule.
+
 ## :gear: Options
 ```json
 {
