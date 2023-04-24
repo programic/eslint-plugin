@@ -21,5 +21,7 @@ The order is seperated into multiple groups. The default group order is:
 
 You can change the order via the `settings` options. Please read the [settings docs](https://github.com/programic/eslint-plugin/blob/master/docs/settings.md).
 
+Note: only direct children of the script setup root will be included by this rule.
+
 ## :gear: Options
 Nothing.
