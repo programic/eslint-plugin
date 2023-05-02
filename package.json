@@ -1,6 +1,6 @@
 {
   "name": "@programic/eslint-plugin",
-  "version": "6.1.2",
+  "version": "6.2.0",
   "description": "Official ESLint plugin for Programic",
   "main": "lib/index.js",
   "files": [
