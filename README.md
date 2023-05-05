@@ -17,7 +17,7 @@ This package contains Programic's code styling presets and our own custom rules 
 
 2. Add `"@programic"` (or `"@programic/eslint-plugin"`) to `plugins` in your .eslintrc.
 
-3. [Optional] Extend one of our presets, like this `"extends": ["plugin:programic/typescript-vue"]`
+3. [Optional] Extend one of our presets, like this `"extends": ["plugin:@programic/vue-typescript"]`
 
 4. [Optional] You can add the custom rules you need to your .eslintrc, like this:
 
