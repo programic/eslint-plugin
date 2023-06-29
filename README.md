@@ -43,7 +43,6 @@ Before using any config or rule from this package, you should include the necess
 |-----------------------------------|-------------|---------|------------|---------|----------------|
 | eslint                            | ^8.2.0      | ^8.2.0  | ^8.2.0     | ^8.2.0  | ^8.2.0         |
 | eslint-plugin-import              | -           | ^2.27.5 | ^2.27.5    | ^2.27.5 | ^2.27.5        |
-| eslint-plugin-import-newlines     | -           | ^1.3.1  | ^1.3.1     | ^1.3.1  | ^1.3.1         |
 | eslint-plugin-unicorn             | -           | ^45.0.2 | ^45.0.2    | ^45.0.2 | ^45.0.2        |
 | eslint-config-airbnb-base         | -           | ^15.0.0 | ^15.0.0    | ^15.0.0 | ^15.0.0        |
 | tailwindcss                       | ^3.2.7      | -       | -          | -       | -              |

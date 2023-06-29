@@ -11,11 +11,12 @@
 This rule enforces newlines inside groups in Vue script setup tag.
 
 Below are the different groups (default):
-1. States (`Any variable that is not part of another group`)
-2. Computed properties (`computed`)
-3. Watchers (`watch`, `watchEffect`, `watchSyncEffect`, `watchPostEffect`)
-4. Lifecycle hooks (`onMounted`, `onUpdated`, `onUnmounted`, `onBeforeMount`, `onBeforeUpdate`, `onBeforeUnmount`, `onErrorCaptured`, `onRenderTracked`, `onRenderTriggered`, `onActivated`, `onDeactivated`, `onServerPrefetch`)
-5. Methods (`Any function statement`)
+1. defineModel (`Any variable that is not part of another group`)
+2. States (`Any variable that is not part of another group`)
+3. Computed properties (`computed`)
+4. Watchers (`watch`, `watchEffect`, `watchSyncEffect`, `watchPostEffect`)
+5. Lifecycle hooks (`onMounted`, `onUpdated`, `onUnmounted`, `onBeforeMount`, `onBeforeUpdate`, `onBeforeUnmount`, `onErrorCaptured`, `onRenderTracked`, `onRenderTriggered`, `onActivated`, `onDeactivated`, `onServerPrefetch`)
+6. Methods (`Any function statement`)
 
 The order of the groups is determined by the settings object. Please read the [settings docs](https://github.com/programic/eslint-plugin/blob/master/docs/settings.md).
 
@@ -26,6 +27,11 @@ You can set the `newlines` option to set the number of expected newlines for all
 {
   "@programic/vue-script-setup-newlines-inside-groups": ["error", {
     "newlines": {
+      "numberOfNewlinesBetweenSingleLineItems": 0,
+      "numberOfNewlinesBetweenSingleAndMultiLineItems": 0,
+      "numberOfNewlinesBetweenMultiLineItems": 0
+    },
+    "defineModel": {
       "numberOfNewlinesBetweenSingleLineItems": 0,
       "numberOfNewlinesBetweenSingleAndMultiLineItems": 0,
       "numberOfNewlinesBetweenMultiLineItems": 0

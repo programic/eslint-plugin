@@ -10,14 +10,17 @@ This rule enforces a specific order in Vue components inside the script setup ta
 
 The order is seperated into multiple groups. The default group order is:
 1. Import declarations
-2. Props (`defineProps`)
-3. Emits (`defineEmits`)
-4. States (`Any variable that is not part of another group`)
-5. Computed properties (`computed`)
-6. Watchers (`watch`, `watchEffect`, `watchSyncEffect`, `watchPostEffect`)
-7. Lifecycle hooks (`onMounted`, `onUpdated`, `onUnmounted`, `onBeforeMount`, `onBeforeUpdate`, `onBeforeUnmount`, `onErrorCaptured`, `onRenderTracked`, `onRenderTriggered`, `onActivated`, `onDeactivated`, `onServerPrefetch`)
-8. Methods (`Any function statement`)
-9. Expose (`defineExpose`)
+2. Models (`defineModel`)
+3. Props (`defineProps`)
+4. Emits (`defineEmits`)
+5. Slots (`defineSlots`)
+6. States (`Any variable that is not part of another group`)
+7. Computed properties (`computed`)
+8. Watchers (`watch`, `watchEffect`, `watchSyncEffect`, `watchPostEffect`)
+9. Lifecycle hooks (`onMounted`, `onUpdated`, `onUnmounted`, `onBeforeMount`, `onBeforeUpdate`, `onBeforeUnmount`, `onErrorCaptured`, `onRenderTracked`, `onRenderTriggered`, `onActivated`, `onDeactivated`, `onServerPrefetch`)
+10. Methods (`Any function statement`)
+11. Expose (`defineExpose`)
+12. Options (`defineOptions`)
 
 You can change the order via the `settings` options. Please read the [settings docs](https://github.com/programic/eslint-plugin/blob/master/docs/settings.md).
 
