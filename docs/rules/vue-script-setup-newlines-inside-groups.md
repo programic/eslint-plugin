@@ -5,7 +5,7 @@
 - :hammer: This rule is **not** automatically fixable
 - :information_source: This rule only works when using the Composition API and script setup tags
 - :information_source: This rule assumes you are using the `@programic/vue-script-setup-order` rule
-- :warning: This rule can give false positives when the script setup code is not in the right order (enforced by `@programic/vue-script-setup-order`)
+- :warning: This rule only works when the script setup code is in the right order (enforced by `@programic/vue-script-setup-order`). If it's not in the right order, this rule will **not** produce any errors.
 
 ## :book: Rule details
 This rule enforces newlines inside groups in Vue script setup tag.
