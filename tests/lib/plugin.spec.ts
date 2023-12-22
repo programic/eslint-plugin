@@ -36,12 +36,6 @@ describe('the Programic ESLint plugin', () => {
       'pinia-style': require(
         '../../lib/rules/pinia-style',
       ),
-      'typescript-explicit-function-return-type': require(
-        '../../lib/rules/typescript-explicit-function-return-type',
-      ),
-      'typescript-explicit-module-boundary-types': require(
-        '../../lib/rules/typescript-explicit-module-boundary-types',
-      ),
       'vue-block-attributes-order': require(
         '../../lib/rules/vue-block-attributes-order',
       ),
